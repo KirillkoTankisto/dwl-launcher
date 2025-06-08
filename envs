@@ -1,0 +1,7 @@
+QT_QPA_PLATFORMTHEME = "qt5ct"
+GTK_THEME = "Breeze-Dark"
+
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+
+XDG_CURRENT_DESKTOP = "wlroots"
+XDG_SESSION_TYPE = "wayland"

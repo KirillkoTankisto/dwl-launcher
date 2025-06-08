@@ -1,0 +1,19 @@
+[[service]]
+name = "Monitor"
+exec = "/sbin/wlr-randr --output DP-3 --mode 2560x1440@180Hz --adaptive-sync enabled"
+
+[[service]]
+name = "Waybar"
+exec = "/sbin/waybar"
+
+[[service]]
+name = "Polkit"
+exec = "/usr/lib/polkit-kde-authentication-agent-1"
+
+[[service]]
+name = "Import environment"
+exec = "/sbin/systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+
+[[service]]
+name = "Start Systemd services"
+exec = "/sbin/systemctl --user start mako gpu-screen-recorder-ui"
